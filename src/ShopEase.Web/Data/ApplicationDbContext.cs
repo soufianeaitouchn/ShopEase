@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ShopEase.Web.Models;
 
-namespace ShopEase.Web.Models
+namespace ShopEase.Web.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
