@@ -9,10 +9,13 @@ namespace ShopEase.Web.Models
 
         public DateTime OrderDate { get; set; } = DateTime.Now;
 
-        [Column(TypeName = "decimal(18,2")]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal TotalAmount { get; set; }
 
         [StringLength(50)]
+        public string Status { get; set; } = "En attente";
+
+        [Required]
         public string ShippingAddress { get; set; } = string.Empty;
 
         [Required]
